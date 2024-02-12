@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/search.css" />
+        <title>MOM'S CARE</title>
+    </head>
+    <body>
+        <div class="__wrap">
+            <header class="header">
+                <div>
+                    <div class="head_gnb">
+                        <div class="btn_back">
+                            <img
+                                src="images/btns/btn_back.png"
+                                alt="뒤로가기"
+                            />
+                        </div>
+                        <h3 class="head_title">검색</h3>
+                    </div>
+                    <div class="head_option">
+                        <div class="input_bx">
+                            <input
+                                type="text"
+                                placeholder="무엇이 궁금하신가요?"
+                                class="search"
+                            />
+                            <button class="btn_delete">
+                                <span class="hide">삭제</span>
+                                <img
+                                    src="images/icons/icon_gray_delete.png"
+                                    alt=""
+                                />
+                            </button>
+                            <button class="btn_search">
+                                <span class="hide">검색</span>
+                                <img
+                                    src="images/icons/icon_search.png"
+                                    alt="검색"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="container">
+                    <div class="search_form">
+                        <div class="search_bx">
+                            <div class="search_head">
+                                <h5>질문 / 답변 <span>(54)</span></h5>
+                                <img
+                                    src="images/btns/btn_black_rightarrow_2.png"
+                                    alt="전체보기"
+                                />
+                            </div>
+                            <ul>
+                                <li>
+                                    <h6>
+                                        아이가
+                                        <span class="search_keyword"
+                                            >거짓말</span
+                                        >을 해요.
+                                    </h6>
+                                    <span>
+                                        성동구 보육기관에서 아동케어중인
+                                        보육사입니다.
+                                    </span>
+                                </li>
+                                <li>
+                                    <h6>
+                                        성동구 보육기관에서 아동케어중인
+                                        보육사입니다...
+                                    </h6>
+                                    <span>
+                                        성동구 보육기관에서 아동케어중인
+                                        보육사입니다.
+                                        <span class="search_keyword"
+                                            >거짓말</span
+                                        >을 자주하는 아이의 교육에 대해 고민이
+                                        많습니다. 평소에 허황...
+                                    </span>
+                                </li>
+                                <li>
+                                    <h6>
+                                        아이가
+                                        <span class="search_keyword"
+                                            >거짓말</span
+                                        >을 해요.
+                                    </h6>
+                                    <span>
+                                        성동구 보육기관에서 아동케어중인
+                                        보육사입니다.
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search_bx">
+                            <div class="search_head">
+                                <h5>지식 / 정보 <span>(0)</span></h5>
+                                <img
+                                    src="images/btns/btn_black_rightarrow_2.png"
+                                    alt="전체보기"
+                                />
+                            </div>
+                            <ul>
+                                <li class="search_none">
+                                    <span> 검색 결과가 없습니다. </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search_bx">
+                            <div class="search_head">
+                                <h5>소통 <span>(999+)</span></h5>
+                                <img
+                                    src="images/btns/btn_black_rightarrow_2.png"
+                                    alt="전체보기"
+                                />
+                            </div>
+                            <ul>
+                                <li>
+                                    <h6>
+                                        아이가
+                                        <span class="search_keyword"
+                                            >거짓말</span
+                                        >을 해요.
+                                    </h6>
+                                    <span>
+                                        성동구 보육기관에서 아동케어중인
+                                        보육사입니다.
+                                    </span>
+                                </li>
+                                <li>
+                                    <h6>
+                                        성동구 보육기관에서 아동케어중인
+                                        보육사입니다...
+                                    </h6>
+                                    <span>
+                                        성동구 보육기관에서 아동케어중인
+                                        보육사입니다.
+                                        <span class="search_keyword"
+                                            >거짓말</span
+                                        >을 자주하는 아이의 교육에 대해 고민이
+                                        많습니다. 평소에 허황...
+                                    </span>
+                                </li>
+                                <li>
+                                    <h6>
+                                        아이가
+                                        <span class="search_keyword"
+                                            >거짓말</span
+                                        >을 해요.
+                                    </h6>
+                                    <span>
+                                        성동구 보육기관에서 아동케어중인
+                                        보육사입니다.
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <script src="js/common.js"></script>
+        <script>
+            const searchHead = document.querySelectorAll(".search_head")
+            searchHead.forEach((el) => {
+                el.addEventListener("click", () => {
+                    location.href = "search_detail.html"
+                })
+            })
+        </script>
+    </body>
+</html>

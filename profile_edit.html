@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/swiper.bundle.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/profile_edit.css" />
+        <title>MOM'S CARE</title>
+    </head>
+    <body>
+        <div class="__wrap">
+            <header class="header">
+                <div>
+                    <div class="head_gnb">
+                        <div class="btn_back">
+                            <img
+                                src="images/btns/btn_back.png"
+                                alt="뒤로가기"
+                            />
+                        </div>
+                        <h3 class="head_title">내 정보 수정</h3>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="container">
+                    <div class="profile">
+                        <div class="profile_image">
+                            <div class="inner">
+                                <div
+                                    class="image"
+                                    style="
+                                        background-image: url('./images/sample/profile03.png');
+                                    "
+                                ></div>
+                                <button>
+                                    <span class="hide">이미지 수정</span>
+                                    <img
+                                        src="images/btns/btn_camera.png"
+                                        alt="이미지 수정"
+                                    />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="profile_form">
+                            <div>
+                                <div class="register_form">
+                                    <div class="tx">
+                                        <span>필수 정보</span>
+                                    </div>
+                                    <div class="form">
+                                        <div class="inner_box">
+                                            <div class="tt">
+                                                <span>닉네임</span>
+                                                <span class="typing"
+                                                    ><span class="value">0</span
+                                                    >/8</span
+                                                >
+                                            </div>
+                                            <div class="bx_input sub_option">
+                                                <input
+                                                    type="text"
+                                                    placeholder="닉네임을 입력하세요"
+                                                    maxlength="8"
+                                                    class="nickname"
+                                                    value="성동구 치와와"
+                                                />
+                                                <div class="sub_options">
+                                                    <button
+                                                        class="btn_delete"
+                                                        type="button"
+                                                    >
+                                                        <span class="hide"
+                                                            >지우기</span
+                                                        >
+                                                        <img
+                                                            src="images/icons/icon_gray_delete.png"
+                                                            alt="지우기"
+                                                        />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inner_box">
+                                            <span>회원 유형 선택</span>
+                                            <div class="bx_pop select on">
+                                                <span
+                                                    >아동복지시설 종사자
+                                                    (보육원, 그룹홈 등)</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="email_view">
+                                            <div class="inner_box">
+                                                <span>이메일</span>
+                                                <div class="bx_input">
+                                                    <input
+                                                        type="text"
+                                                        placeholder="이메일을 입력하세요."
+                                                        value="momscare@gmail.com"
+                                                        readonly
+                                                    />
+                                                    <div
+                                                        class="verification_completed"
+                                                    >
+                                                        <div>
+                                                            <span
+                                                                >인증완료</span
+                                                            >
+                                                            <img
+                                                                src="images/icons/icon_gray_checked.png"
+                                                                alt="인증완료"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="kakao_verification_completed"
+                                                    >
+                                                        <span class="hide"
+                                                            >카카오 이메일</span
+                                                        >
+                                                        <img
+                                                            src="images/icons/icon_kakao.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="naver_verification_completed"
+                                                    >
+                                                        <span class="hide"
+                                                            >네이버 이메일</span
+                                                        >
+                                                        <img
+                                                            src="images/icons/icon_naver.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inner_box">
+                                            <span>휴대폰 번호</span>
+                                            <div class="bx_input">
+                                                <input
+                                                    type="text"
+                                                    placeholder="‘-’제외 숫자만 입력"
+                                                    value="01012345678"
+                                                    readonly
+                                                />
+                                                <div
+                                                    class="verification_completed"
+                                                >
+                                                    <div>
+                                                        <span>인증완료</span>
+                                                        <img
+                                                            src="images/icons/icon_checked.png"
+                                                            alt="인증완료"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="bx_input certification_number"
+                                            >
+                                                <input
+                                                    type="text"
+                                                    placeholder="인증번호 6자리"
+                                                />
+                                                <button disabled>
+                                                    인증하기
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="register_sub_form">
+                                    <div class="tx">
+                                        <span>추가 정보</span>
+                                    </div>
+                                    <div class="form">
+                                        <div class="inner_box">
+                                            <span>근무 기관</span>
+                                            <div class="bx_input">
+                                                <input
+                                                    type="text"
+                                                    placeholder="근무 기관명을 입력하세요."
+                                                    value="꿈빛 보육원"
+                                                />
+                                            </div>
+                                            <span class="sub_tx"
+                                                >근무 기관을 입력하시면 더욱
+                                                편리하게 서비스를 이용하실 수
+                                                있습니다.</span
+                                            >
+                                        </div>
+                                        <div class="inner_box">
+                                            <span>경력</span>
+                                            <div class="bx_input">
+                                                <input
+                                                    type="text"
+                                                    placeholder="경력을 입력하세요."
+                                                    value="3년"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn_save">저장하기</button>
+                            </div>
+                        </div>
+                        <div class="profile_sub_option">
+                            <button class="btn_newpassword">
+                                <span>비밀번호 재설정</span>
+                                <img
+                                    src="images/btns/btn_gray_rightarrow.png"
+                                    alt=""
+                                />
+                            </button>
+                            <button class="btn_logout">
+                                <span>로그아웃</span>
+                                <img
+                                    src="images/btns/btn_gray_rightarrow.png"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <!-- 회원 유형 선택 모달 -->
+        <div class="category_popup modal_popup">
+            <div class="overlay"></div>
+            <div class="content">
+                <h6><span>회원 유형</span>을 선택하세요</h6>
+                <div class="category_form">
+                    <div class="list">
+                        <input type="radio" id="practician" name="category" />
+                        <label for="practician"
+                            >아동복지시설 종사자 (보육원, 그룹홈 등)</label
+                        >
+                    </div>
+                    <div class="list">
+                        <input type="radio" id="normal" name="category" />
+                        <label for="normal">일반</label>
+                    </div>
+                </div>
+                <button class="btn_confirm" disabled>확인</button>
+            </div>
+        </div>
+        <!-- 로그아웃 모달 -->
+        <div class="logout_popup">
+            <div class="content">
+                <h6>로그아웃 하시겠습니까?</h6>
+                <div class="modal_buttons">
+                    <button class="btn_no">아니요</button>
+                    <button class="btn_yes">로그아웃</button>
+                </div>
+            </div>
+        </div>
+        <!-- 저장하기 토스트 팝업 -->
+        <div class="save_toast">
+            <div class="content">
+                <h6>저장이 완료되었습니다.</h6>
+            </div>
+        </div>
+        <script src="js/common.js"></script>
+        <script src="js/profileEdit.js"></script>
+    </body>
+</html>

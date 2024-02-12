@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/register.css" />
+        <title>MOM'S CARE</title>
+    </head>
+    <body>
+        <div class="__wrap">
+            <header class="header">
+                <div>
+                    <div class="head_gnb">
+                        <div class="logo">
+                            <a href="main.html">
+                                <img
+                                    src="images/icons/icon_logo.png"
+                                    alt="mom's care"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="container full">
+                    <div class="register_form">
+                        <div class="register">
+                            <h2>
+                                회원가입하고 맘스케어의<br />
+                                다양한 서비스를 경험하세요.
+                            </h2>
+                            <div class="select_register">
+                                <div class="sns">
+                                    <button class="btn_kakao">
+                                        카카오로 시작하기
+                                    </button>
+                                    <button class="btn_naver">
+                                        네이버로 시작하기
+                                    </button>
+                                </div>
+                                <div class="or">
+                                    <span>또는</span>
+                                </div>
+                                <div>
+                                    <button
+                                        class="btn_email"
+                                        onclick="EmailRegister()"
+                                    >
+                                        이메일로 시작하기
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="login.html"
+                            >계정이 있으신가요? <span>로그인 하기</span></a
+                        >
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <script>
+            function EmailRegister() {
+                location.href = "register_form.html"
+            }
+        </script>
+    </body>
+</html>

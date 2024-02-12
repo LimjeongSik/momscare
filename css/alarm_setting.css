@@ -1,0 +1,87 @@
+.__wrap {
+    padding-top: 2.2rem;
+}
+.header {
+    padding-bottom: 0;
+}
+.alram_setting {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    grid-gap: 0.65rem;
+    padding-top: 0.65rem;
+}
+.toggle_wrapper {
+    border-bottom: 0.4rem solid var(--border);
+}
+.toggle_wrapper > h6 {
+    font-size: 0.7rem;
+    color: var(--gray);
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: -0.014rem;
+    padding: 0 1.2rem;
+}
+.toggle_wrapper ul {
+    margin-top: 0.5rem;
+}
+.toggle_wrapper ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1.2rem;
+    border-bottom: 1px solid var(--gray06);
+}
+.toggle_wrapper ul li > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    grid-gap: 0.2rem;
+}
+.toggle_wrapper ul li > div h6 {
+    font-size: 0.7rem;
+    color: var(--black);
+    font-weight: 400;
+    line-height: 1.57;
+    letter-spacing: -0.014rem;
+}
+.toggle_wrapper ul li > div span {
+    font-size: 0.6rem;
+    color: var(--gray);
+    font-weight: 100;
+    line-height: 1.67;
+    letter-spacing: -0.012rem;
+}
+.toggle_wrapper ul li .toggle_bx input[type="checkbox"] {
+    display: none;
+}
+.toggle_wrapper ul li .toggle_bx label {
+    position: relative;
+    width: 2rem;
+    height: 1.1rem;
+    border-radius: 0.55rem;
+    background: var(--gray04);
+    cursor: pointer;
+}
+.toggle_wrapper ul li .toggle_bx label::before {
+    content: "";
+    position: absolute;
+    top: 0.1rem;
+    left: 0.1rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    background: var(--white);
+    transition: 0.3s;
+}
+.toggle_wrapper ul li .toggle_bx input[type="checkbox"]:checked + label {
+    background: var(--black);
+}
+.toggle_wrapper
+    ul
+    li
+    .toggle_bx
+    input[type="checkbox"]:checked
+    + label::before {
+    left: calc(100% - 1rem);
+}

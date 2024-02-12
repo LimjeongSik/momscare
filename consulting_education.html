@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/consulting.css" />
+        <title>MOM'S CARE</title>
+    </head>
+    <body>
+        <div class="__wrap">
+            <header class="header">
+                <div>
+                    <div class="head_gnb">
+                        <div class="btn_back">
+                            <img
+                                src="images/btns/btn_back.png"
+                                alt="뒤로가기"
+                            />
+                        </div>
+                        <h3 class="head_title">보육사 교육 신청</h3>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="container">
+                    <div class="consulting">
+                        <div class="inner">
+                            <div class="step">
+                                <div class="step_title">
+                                    <h6>STEP1. 신청자 정보</h6>
+                                </div>
+                                <div class="bx">
+                                    <div class="input_bx">
+                                        <label for="name">이름</label>
+                                        <input
+                                            type="text"
+                                            placeholder="이름을 입력하세요."
+                                            id="name"
+                                        />
+                                    </div>
+                                    <div class="input_bx">
+                                        <label for="phone">연락처</label>
+                                        <input
+                                            type="text"
+                                            placeholder="연락처를 입력하세요."
+                                            id="phone"
+                                        />
+                                    </div>
+                                    <div class="input_bx">
+                                        <label for="workplace">근무 기관</label>
+                                        <input
+                                            type="text"
+                                            placeholder="근무 기관명을 입력하세요."
+                                            id="workplace"
+                                        />
+                                    </div>
+                                    <div class="chk_bx">
+                                        <input type="checkbox" id="same" />
+                                        <label for="same"
+                                            >회원 정보와 동일하게 입력</label
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step_title">
+                                    <h6>STEP2. 상담 받을 교육</h6>
+                                </div>
+                                <div class="bx">
+                                    <div class="edu_bx">
+                                        <div class="primary">
+                                            <span>훈육 및 행동 지도 방법</span>
+                                        </div>
+                                        <p>
+                                            일관성 있는 양육태도에 대한 교육과
+                                            그 외 사례 상담 등 제공
+                                        </p>
+                                    </div>
+                                    <div class="edu_bx">
+                                        <div>
+                                            <span>양육태도 일치 관련 검사</span>
+                                        </div>
+                                        <p>
+                                            양육태도검사와 그 외 사례 상담 등
+                                            제공
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step_title">
+                                    <h6>STEP3. 교육 인원</h6>
+                                </div>
+                                <div class="bx">
+                                    <div class="input_bx">
+                                        <label for="personnel">교육 인원</label>
+                                        <input
+                                            type="text"
+                                            placeholder="교육받을 인원을 입력하세요"
+                                            id="personnel"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step_title">
+                                    <h6>STEP4. 방문 일시</h6>
+                                </div>
+                                <div class="bx">
+                                    <div class="select_bx">
+                                        <span>날짜</span>
+                                        <input
+                                            type="date"
+                                            data-placeholder="상담을 원하는 날짜를 선택하세요"
+                                            required
+                                            aria-required="true"
+                                        />
+                                    </div>
+                                    <div class="select_bx">
+                                        <span>시간</span>
+                                        <input
+                                            type="time"
+                                            data-placeholder="상담을 원하는 시간을 선택하세요"
+                                            required
+                                            aria-required="true"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notice">
+                            <span>확인해주세요!</span>
+                            <br /><br />
+                            <ul>
+                                <li>
+                                    오픈 초기 선착순 이벤트로서, 마감 현황에
+                                    따라 이벤트가<br />
+                                    조기 종료될 수 있습니다.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="apply">
+                            <button disabled>신청하기</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <div class="apply_modal">
+            <div class="content">
+                <h6>상담 신청이 완료되었어요!</h6>
+                <span>홈으로 이동합니다</span>
+            </div>
+        </div>
+
+        <script src="js/common.js"></script>
+        <script src="js/consulting.js"></script>
+    </body>
+</html>

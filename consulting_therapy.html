@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/consulting.css" />
+        <title>MOM'S CARE</title>
+    </head>
+    <body>
+        <div class="__wrap">
+            <header class="header">
+                <div>
+                    <div class="head_gnb">
+                        <div class="btn_back">
+                            <img
+                                src="images/btns/btn_back.png"
+                                alt="뒤로가기"
+                            />
+                        </div>
+                        <h3 class="head_title">아동 직접 치료 신청</h3>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="container">
+                    <div class="consulting">
+                        <div class="inner">
+                            <div class="step">
+                                <div class="step_title">
+                                    <h6>STEP1. 신청자 정보</h6>
+                                </div>
+                                <div class="bx">
+                                    <div class="input_bx">
+                                        <label for="name">이름</label>
+                                        <input
+                                            type="text"
+                                            placeholder="이름을 입력하세요."
+                                            id="name"
+                                        />
+                                    </div>
+                                    <div class="input_bx">
+                                        <label for="phone">연락처</label>
+                                        <input
+                                            type="text"
+                                            placeholder="연락처를 입력하세요."
+                                            id="phone"
+                                        />
+                                    </div>
+                                    <div class="input_bx">
+                                        <label for="workplace">근무 기관</label>
+                                        <input
+                                            type="text"
+                                            placeholder="근무 기관명을 입력하세요."
+                                            id="workplace"
+                                        />
+                                    </div>
+                                    <div class="chk_bx">
+                                        <input type="checkbox" id="same" />
+                                        <label for="same"
+                                            >회원 정보와 동일하게 입력</label
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step_title">
+                                    <h6>STEP2. 아동 정보</h6>
+                                </div>
+                                <div class="bx">
+                                    <div class="select_bx">
+                                        <span>성별</span>
+                                        <button class="btn_gender_popup">
+                                            <span class="gender_value"
+                                                >아동의 성별을 선택하세요</span
+                                            >
+                                            <img
+                                                src="images/btns/btn_darkgray_downarrow.png"
+                                                alt=""
+                                            />
+                                        </button>
+                                    </div>
+                                    <div class="select_bx">
+                                        <span>연령</span>
+                                        <button class="btn_age_popup">
+                                            <span class="age_value"
+                                                >아동의 연령을 선택하세요</span
+                                            >
+                                            <img
+                                                src="images/btns/btn_darkgray_downarrow.png"
+                                                alt=""
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step_title">
+                                    <h6>STEP3. 신청 이유</h6>
+                                </div>
+                                <div class="bx">
+                                    <div class="text_bx">
+                                        <textarea
+                                            class="reason"
+                                            placeholder="아동 보육 경험을 알려주세요"
+                                            maxlength="1000"
+                                        ></textarea>
+                                        <span class="typing"
+                                            ><span class="value">0</span
+                                            >/1000</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notice">
+                            <span>확인해주세요!</span>
+                            <br /><br />
+                            <ul>
+                                <li>
+                                    오픈 초기 선착순 이벤트로서, 마감 현황에
+                                    따라 이벤트가<br />
+                                    조기 종료될 수 있습니다.
+                                </li>
+                                <li>
+                                    해당 이벤트는 시설 당 최대 2번까지 신청
+                                    가능합니다.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="apply">
+                            <button disabled>신청하기</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <!-- 성별 선택 팝업 -->
+        <div class="select_popup gender_select">
+            <div class="content">
+                <h6>아동의 성별을 선택해주세요.</h6>
+                <div class="select_form">
+                    <div class="dropdown gender">
+                        <div>
+                            <span class="value">성별 선택</span>
+                            <img
+                                src="images/btns/btn_darkgray_downarrow.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="dropdown_item">
+                            <ul>
+                                <li>여아</li>
+                                <li>남아</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn_confirm" disabled>확인</button>
+            </div>
+        </div>
+        <!-- 나이 선택 팝업 -->
+        <div class="select_popup age_select">
+            <div class="content">
+                <h6>아동의 연령을 선택해주세요.</h6>
+                <div class="select_form">
+                    <div class="dropdown age">
+                        <div>
+                            <span class="value">연령 선택</span>
+                            <img
+                                src="images/btns/btn_darkgray_downarrow.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="dropdown_item">
+                            <ul>
+                                <li>전체</li>
+                                <li>1세 이하</li>
+                                <li>1~3세</li>
+                                <li>3~6세</li>
+                                <li>6~9세</li>
+                                <li>9~12세</li>
+                                <li>12~15세</li>
+                                <li>15세 이상</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn_confirm" disabled>확인</button>
+            </div>
+        </div>
+        <!-- 신청 완료 모달 -->
+        <div class="apply_modal">
+            <div class="content">
+                <h6>상담 신청이 완료되었어요!</h6>
+                <span>홈으로 이동합니다</span>
+            </div>
+        </div>
+
+        <script src="js/common.js"></script>
+        <script src="js/consulting.js"></script>
+        <script src="js/therapy.js"></script>
+    </body>
+</html>

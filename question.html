@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/question.css" />
+        <title>MOM'S CARE</title>
+    </head>
+    <body>
+        <div class="__wrap">
+            <header class="header">
+                <div>
+                    <div class="head_gnb">
+                        <div class="btn_back">
+                            <img
+                                src="images/btns/btn_back.png"
+                                alt="뒤로가기"
+                            />
+                        </div>
+                        <h3 class="head_title">질문/답변</h3>
+                        <div class="head_btns">
+                            <div class="alram">
+                                <img
+                                    src="images/icons/icon_alram.png"
+                                    alt="알림"
+                                />
+                            </div>
+                            <div class="user">
+                                <img
+                                    src="images/icons/icon_user.png"
+                                    alt="내정보"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="head_option">
+                        <div class="input_bx">
+                            <input
+                                type="text"
+                                placeholder="무엇이 궁금하신가요?"
+                                class="search"
+                            />
+                            <button class="btn_delete">
+                                <span class="hide">삭제</span>
+                                <img
+                                    src="images/icons/icon_gray_delete.png"
+                                    alt=""
+                                />
+                            </button>
+                            <button class="btn_search">
+                                <span class="hide">검색</span>
+                                <img
+                                    src="images/icons/icon_search.png"
+                                    alt="검색"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="container">
+                    <div class="radio">
+                        <div>
+                            <input
+                                type="radio"
+                                name="question"
+                                id="all"
+                                checked
+                            />
+                            <label for="all">모두보기</label>
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                name="question"
+                                id="specialist"
+                            />
+                            <label for="specialist">전문가 답변</label>
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                name="question"
+                                id="myquestion"
+                            />
+                            <label for="myquestion">내 질문</label>
+                        </div>
+                    </div>
+                    <div class="specialist_filter">
+                        <button class="filter_reset">모든 선택 해제</button>
+                        <div class="mentality">
+                            <span>심리</span>
+                            <div class="filter_list">
+                                <div>훈육</div>
+                                <div>사회성</div>
+                                <div>정서</div>
+                                <div>놀이</div>
+                                <div>행동</div>
+                            </div>
+                        </div>
+                        <div class="develop">
+                            <span>발달</span>
+                            <div class="filter_list">
+                                <div>교육</div>
+                                <div>운동</div>
+                                <div>인지</div>
+                                <div>언어</div>
+                                <div>감각</div>
+                                <div>신변처리</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container">
+                    <div class="filter">
+                        <div class="filter_inner">
+                            <span class="value">최신순</span>
+                            <img
+                                src="images/btns/btn_black_downarrow.png"
+                                alt="더보기"
+                            />
+                            <div class="dropdown_filter">
+                                <ul>
+                                    <li>최신순</li>
+                                    <li>인기순</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question_list_container">
+                        <div class="question_list">
+                            <div class="question_head">
+                                <div class="tag_inner">
+                                    <div class="tag">훈육</div>
+                                    <div class="tag">여아 / 5세</div>
+                                </div>
+                                <div class="specialist_inner">
+                                    <span>전문가 답변완료</span>
+                                    <img
+                                        src="images/icons/icon_confirm.png"
+                                        alt="전문가 답변완료"
+                                    />
+                                </div>
+                            </div>
+                            <div class="question_body">
+                                <h6>
+                                    <span>Q.</span> 아이가 습관적으로 물어요.
+                                </h6>
+                                <span>
+                                    성동구 보육기관에서 아동케어중인
+                                    보육사입니다. 최근 5세 아동 한명이 무는
+                                    버릇이 심해지고 저쩌...
+                                </span>
+                            </div>
+                            <div class="question_options">
+                                <div>
+                                    <div class="option btn_heart">
+                                        <span class="hide">좋아요</span>99+
+                                    </div>
+                                    <div class="option btn_comment">
+                                        <span class="hide">코멘트</span>99+
+                                    </div>
+                                    <div class="option btn_favorites">
+                                        <span class="hide">즐겨찾기</span>50
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service">
+                            <div class="services_title">
+                                <h6>찾아가는 맘스케어</h6>
+                                <span>보육사 교육 ∙ 아동 관련 상담</span>
+                            </div>
+                            <div class="service_btn">
+                                <span>서비스 신청하기</span>
+                                <img
+                                    src="images/btns/btn_white_more.png"
+                                    alt="서비스 신청하기"
+                                />
+                            </div>
+                        </div>
+                        <div class="question_list">
+                            <div class="question_head">
+                                <div class="tag_inner">
+                                    <div class="tag">훈육</div>
+                                    <div class="tag">여아 / 5세</div>
+                                </div>
+                                <div class="specialist_inner">
+                                    <span>전문가 답변완료</span>
+                                    <img
+                                        src="images/icons/icon_confirm.png"
+                                        alt="전문가 답변완료"
+                                    />
+                                </div>
+                            </div>
+                            <div class="question_body">
+                                <h6>
+                                    <span>Q.</span> 아이가 습관적으로 물어요.
+                                </h6>
+                                <span>
+                                    성동구 보육기관에서 아동케어중인
+                                    보육사입니다. 최근 5세 아동 한명이 무는
+                                    버릇이 심해지고 저쩌...
+                                </span>
+                            </div>
+                            <div class="question_options">
+                                <div>
+                                    <div class="option btn_heart">
+                                        <span class="hide">좋아요</span>99+
+                                    </div>
+                                    <div class="option btn_comment">
+                                        <span class="hide">코멘트</span>99+
+                                    </div>
+                                    <div class="option btn_favorites">
+                                        <span class="hide">즐겨찾기</span>50
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question_list">
+                            <div class="question_head">
+                                <div class="tag_inner">
+                                    <div class="tag">훈육</div>
+                                    <div class="tag">여아 / 5세</div>
+                                </div>
+                                <div class="specialist_inner">
+                                    <span>전문가 답변완료</span>
+                                    <img
+                                        src="images/icons/icon_confirm.png"
+                                        alt="전문가 답변완료"
+                                    />
+                                </div>
+                            </div>
+                            <div class="question_body">
+                                <h6>
+                                    <span>Q.</span> 아이가 습관적으로 물어요.
+                                </h6>
+                                <span>
+                                    성동구 보육기관에서 아동케어중인
+                                    보육사입니다. 최근 5세 아동 한명이 무는
+                                    버릇이 심해지고 저쩌...
+                                </span>
+                            </div>
+                            <div class="question_options">
+                                <div>
+                                    <div class="option btn_heart">
+                                        <span class="hide">좋아요</span>99+
+                                    </div>
+                                    <div class="option btn_comment">
+                                        <span class="hide">코멘트</span>99+
+                                    </div>
+                                    <div class="option btn_favorites">
+                                        <span class="hide">즐겨찾기</span>50
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <div class="footer_bar">
+                <div class="inner">
+                    <a href="main.html" class="nav_home" data-path="/main.html">
+                        <span>홈</span>
+                    </a>
+                    <a
+                        href="question.html"
+                        class="nav_question"
+                        data-path="/question.html"
+                    >
+                        <span>질문•답변</span>
+                    </a>
+                    <a href="info.html" class="nav_info" data-path="/info.html">
+                        <span>지식•정보</span>
+                    </a>
+                    <a
+                        href="community.html"
+                        class="nav_community"
+                        data-path="/community.html"
+                    >
+                        <span>소통</span>
+                    </a>
+                </div>
+            </div>
+            <div class="edit_list">
+                <div>
+                    <div class="question">
+                        <div>
+                            <img
+                                src="images/icons/icon_question.png"
+                                alt="질문하기"
+                            />
+                            <h6>질문하기</h6>
+                        </div>
+                        <span>양육 관련 질문에 전문가가 답해드려요.</span>
+                    </div>
+                    <div class="communication">
+                        <div>
+                            <img
+                                src="images/icons/icon_communication.png"
+                                alt="소통하기"
+                            />
+                            <h6>소통하기</h6>
+                        </div>
+                        <span>다른 종사자들과 자유롭게 소통해보세요.</span>
+                    </div>
+                </div>
+            </div>
+            <button class="btn_edit">
+                <span class="hide">작성하기</span>
+            </button>
+        </div>
+        <script src="js/common.js"></script>
+        <script src="js/question.js"></script>
+    </body>
+</html>

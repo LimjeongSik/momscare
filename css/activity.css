@@ -1,0 +1,90 @@
+.__wrap {
+    padding-top: 2.2rem;
+}
+.header {
+    padding-bottom: 0;
+}
+.activity_detail {
+    padding: 1rem 0;
+}
+.activity_detail_head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 1.2rem;
+}
+.activity_detail_head .filter {
+    margin-top: 0;
+}
+.activity_detail_list > ul {
+    margin-top: 0.4rem;
+}
+.activity_detail_list > ul > li {
+    cursor: pointer;
+    padding: 0.9rem 1.2rem;
+    border-bottom: 1px solid var(--gray06);
+}
+.list_content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.list_content > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    grid-gap: 0.2rem;
+}
+.list_content > div > h6 {
+    font-size: 0.6rem;
+    color: var(--black01);
+    font-weight: 700;
+    line-height: 1.67;
+    letter-spacing: -0.012rem;
+}
+.list_content > div > span {
+    font-size: 0.6rem;
+    color: var(--black01);
+    font-weight: 100;
+    line-height: 1.67;
+    letter-spacing: -0.012rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.list_content > div > div {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    grid-gap: 0.75rem;
+}
+.list_content > div > div span {
+    position: relative;
+    font-size: 0.5rem;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: -0.01rem;
+}
+.list_content > div > div span:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -0.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 0.5rem;
+    background: var(--gray04);
+}
+.list_content > button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.list_content > button img {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+}

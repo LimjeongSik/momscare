@@ -1,0 +1,80 @@
+.__wrap {
+    padding-top: 2.2rem;
+}
+.header {
+    padding-bottom: 0;
+    max-width: 768px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main {
+    width: 100%;
+    height: calc(100vh - 2.2rem);
+    display: flex;
+    flex-direction: column;
+}
+.main .container {
+    display: none;
+}
+.main .container.default {
+    display: flex;
+}
+.main .container.full {
+    flex: 1;
+}
+.state {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.2rem 1.7rem;
+}
+.state .state_val {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.state .state_val h6 {
+    font-size: 0.95rem;
+    color: var(--black);
+    font-weight: 700;
+    line-height: 1.58;
+    letter-spacing: -0.019rem;
+    text-align: center;
+}
+.state .state_val h6 span {
+    color: var(--primary);
+}
+.state .state_val > a {
+    position: relative;
+    font-size: 0.6rem;
+    color: var(--gray);
+    font-weight: 700;
+    line-height: 1.67;
+    letter-spacing: -0.012rem;
+    text-decoration: none;
+    margin-top: 1.8rem;
+}
+.state .state_val > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0.1rem;
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray);
+}
+.state > button {
+    width: 100%;
+    height: 2.6rem;
+    border-radius: 0.4rem;
+    background: var(--black);
+    border: none;
+    font-size: 0.8rem;
+    color: var(--white);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.016rem;
+}

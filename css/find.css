@@ -1,0 +1,96 @@
+.__wrap {
+    padding-top: 2.2rem;
+}
+.header {
+    padding-bottom: 0;
+    max-width: 768px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.find {
+    margin-top: 1.8rem;
+    padding: 0 1.2rem;
+}
+.find > h2 {
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: 300;
+    line-height: 1.42;
+    letter-spacing: -0.024rem;
+}
+
+.find_form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    grid-gap: 0.6rem;
+    margin-top: 1.8rem;
+}
+.find_form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    grid-gap: 0.2rem;
+}
+.find_form fieldset label {
+    font-size: 0.6rem;
+    color: var(--black);
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: -0.012rem;
+}
+.find_form fieldset input {
+    width: 100%;
+    height: 2.6rem;
+    border: 1px solid var(--gray04);
+    border-radius: 0.4rem;
+    padding: 0 6.5rem 0 1rem;
+    font-size: 0.8rem;
+    color: var(--black);
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.016rem;
+    outline: none;
+}
+.find_form fieldset input::placeholder {
+    color: var(--gray);
+    font-weight: 300;
+}
+.find_form fieldset div + div {
+    margin-top: 0.4rem;
+}
+.find_form fieldset .bx {
+    position: relative;
+}
+.find_form fieldset .bx .time {
+    display: none;
+    position: absolute;
+    right: 5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.016rem;
+}
+.find_form fieldset .bx button {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0.4rem;
+    background: var(--primary);
+    border: none;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.57;
+    letter-spacing: -0.014rem;
+    z-index: 50;
+}
+.find_form fieldset .bx button:disabled {
+    color: var(--primary);
+    background: var(--secondary);
+}

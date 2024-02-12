@@ -1,0 +1,344 @@
+.__wrap {
+    padding-top: 2.2rem;
+}
+.header {
+    padding-bottom: 0;
+}
+.select_bx {
+    padding: 1rem 1.2rem;
+}
+.select_bx > div {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+    cursor: pointer;
+}
+.select_bx > div > span {
+    font-size: 0.7rem;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.57;
+    letter-spacing: -0.021rem;
+}
+.select_bx > div > span.selected {
+    color: var(--black);
+}
+.select_bx > div > img {
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+    transform: translateY(-1px);
+}
+.write {
+    width: 100%;
+    min-height: calc(100vh - 3.7rem);
+    display: flex;
+    flex-direction: column;
+}
+.write .write_head {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.write_form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.write_form > input {
+    width: 100%;
+    padding: 0 1.2rem 1rem;
+    border: none;
+    font-size: 0.9rem;
+    color: var(--black);
+    font-weight: 700;
+    line-height: 1.44;
+    letter-spacing: -0.018rem;
+    outline: none;
+}
+.write_form > input::placeholder {
+    color: var(--gray);
+    font-weight: 300;
+}
+.write_form > textarea {
+    flex: 1;
+    resize: none;
+    width: 100%;
+    min-height: 17.3rem;
+    border-top: 1px solid var(--gray06);
+    padding: 1.1rem 1.2rem 1rem;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    outline: none;
+    font-size: 0.7rem;
+    color: var(--black01);
+    font-weight: 400;
+    line-height: 1.57;
+    letter-spacing: -0.021rem;
+}
+.write_form > textarea::placeholder {
+    color: var(--gray);
+    font-weight: 300;
+}
+.upload_swiper .swiper-slide {
+    width: fit-content;
+}
+.write_body .keyword_input {
+    display: none;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    grid-gap: 1rem;
+    padding: 0.2rem 1.2rem;
+    border-top: 1px solid var(--gray06);
+    border-bottom: 1px solid var(--gray06);
+    background: var(--white);
+    margin-top: 0.7rem;
+}
+.write_body .keyword_input.active {
+    display: flex;
+}
+.write_body .keyword_input input {
+    width: 100%;
+    font-size: 0.7rem;
+    color: var(--black01);
+    font-weight: 400;
+    line-height: 1.57;
+    letter-spacing: -0.014rem;
+    outline: none;
+    border: none;
+}
+.write_body .keyword_input input::placeholder {
+    color: var(--gray04);
+    font-weight: 300;
+}
+.write_body .keyword_input button {
+    min-width: fit-content;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+    background: var(--gray06);
+    border: none;
+    font-size: 0.7rem;
+    color: var(--gray);
+    font-weight: 400;
+    line-height: 1.57;
+    letter-spacing: -0.014rem;
+}
+.image_upload {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+    padding: 0 0 0 1.2rem;
+    margin: 0 0 0.5rem;
+}
+.image_upload_button input[type="file"] {
+    display: none;
+}
+.image_upload .image_upload_button label {
+    display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+    background: var(--white);
+    border: 1px solid var(--gray05);
+    border-radius: 0.4rem;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+.image_upload .image_upload_button label img {
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.upload {
+    width: 100%;
+    overflow: hidden;
+}
+.upload .upload_swiper .uploadSwiper {
+    padding: 0.7rem 1rem 0.7rem 0;
+}
+.upload .no-upload {
+    display: block;
+    width: 100%;
+    font-size: 0.7rem;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.57;
+    letter-spacing: -0.021rem;
+    text-align: center;
+}
+.upload_item {
+    position: relative;
+}
+.upload_item > img {
+    display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 0.4rem;
+}
+.upload_item > button {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    right: -0.3rem;
+    top: -0.3rem;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.upload_item > button > img {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+}
+.write_btn {
+    padding: 0.6rem 1.2rem 1.05rem;
+}
+.write_btn button {
+    width: 100%;
+    height: 2.6rem;
+    border-radius: 0.4rem;
+    background: var(--black);
+    border: none;
+    font-size: 0.8rem;
+    color: var(--white);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.016rem;
+    cursor: pointer;
+}
+.write_btn button:disabled {
+    background: var(--gray06);
+    color: var(--gray);
+    cursor: default;
+}
+
+.select_popup {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    transition: opacity 0.3s ease;
+}
+.select_popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+.select_popup .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 16rem;
+    padding: 1.5rem 0.8rem 1.2rem;
+    border-radius: 0.4rem;
+    background: var(--white);
+}
+.select_popup .content .select_form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    grid-gap: 0.5rem;
+    margin: 1.25rem 0;
+}
+.select_popup .content > h6 {
+    font-size: 0.9rem;
+    color: var(--black);
+    font-weight: 400;
+    line-height: 1.44;
+    letter-spacing: -0.018rem;
+    text-align: center;
+}
+.select_popup .content > button {
+    width: 100%;
+    height: 2.6rem;
+    border-radius: 0.4rem;
+    background: var(--black);
+    border: none;
+    font-size: 0.8rem;
+    color: var(--white);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.016rem;
+    cursor: pointer;
+}
+.select_popup .content > button:disabled {
+    background: var(--gray06);
+    color: var(--gray);
+    cursor: default;
+}
+.select_popup .content .dropdown {
+    position: relative;
+    cursor: pointer;
+}
+.select_popup .content .dropdown .dropdown_item {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 3.2rem;
+    width: 100%;
+    max-height: 10rem;
+    overflow-y: auto;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    background: var(--white);
+    border: 1px solid var(--gray04);
+    z-index: 100;
+}
+.select_popup .content .dropdown .dropdown_item.active {
+    display: block;
+}
+.select_popup .content .dropdown .dropdown_item > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    grid-gap: 0.2rem;
+}
+.select_popup .content .dropdown .dropdown_item > ul li {
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--black);
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.016rem;
+    cursor: pointer;
+}
+.select_popup .content .dropdown .dropdown_item > ul li:hover {
+    background: var(--secondary);
+    color: var(--primary);
+}
+.select_popup .content .dropdown > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--gray04);
+}
+.select_popup .content .dropdown > div > span {
+    font-size: 0.8rem;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.016rem;
+}
+.select_popup .content .dropdown > div > span.selected {
+    color: var(--black);
+}
+.select_popup .content .dropdown > div > img {
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+}

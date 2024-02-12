@@ -1,0 +1,46 @@
+.__wrap {
+    padding-top: 2.2rem;
+}
+.header {
+    padding-bottom: 0;
+}
+
+.notice_detail_head {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    grid-gap: 0.2rem;
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid var(--gray06);
+}
+.notice_detail_head strong {
+    font-size: 0.7rem;
+    color: var(--primary);
+    font-weight: 300;
+    line-height: 1.57;
+    letter-spacing: -0.021rem;
+}
+.notice_detail_head h2 {
+    font-size: 0.9rem;
+    color: var(--black01);
+    font-weight: 700;
+    line-height: 1.44;
+    letter-spacing: -0.018rem;
+}
+.notice_detail_head p {
+    font-size: 0.6rem;
+    color: var(--gray);
+    font-weight: 200;
+    line-height: 1.67;
+    letter-spacing: -0.012rem;
+}
+.notice_detail_body {
+    padding: 1.2rem 1.2rem 5rem;
+}
+.notice_detail_body span {
+    font-size: 0.7rem;
+    color: var(--black);
+    font-weight: 300;
+    line-height: 1.57;
+    letter-spacing: -0.014rem;
+}

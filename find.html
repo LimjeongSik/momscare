@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/find.css" />
+        <title>MOM'S CARE</title>
+    </head>
+    <body>
+        <div class="__wrap">
+            <header class="header">
+                <div>
+                    <div class="head_gnb">
+                        <div class="btn_back">
+                            <img
+                                src="images/btns/btn_back.png"
+                                alt="뒤로가기"
+                            />
+                        </div>
+                        <h3 class="head_title">이메일 찾기</h3>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="container">
+                    <div class="find">
+                        <h2>
+                            인증에 필요한 정보를<br />
+                            입력해주세요.
+                        </h2>
+                        <form class="find_form">
+                            <fieldset>
+                                <label for="name">이름</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="이름을 입력하세요."
+                                />
+                            </fieldset>
+                            <fieldset>
+                                <label for="phone">휴대폰 번호</label>
+                                <div class="bx">
+                                    <input
+                                        type="text"
+                                        id="phone"
+                                        placeholder="‘-’제외 숫자만 입력"
+                                    />
+                                    <button
+                                        class="btn_authentication_number"
+                                        type="button"
+                                        disabled
+                                    >
+                                        인증번호 전송
+                                    </button>
+                                </div>
+                                <div class="bx">
+                                    <input
+                                        type="text"
+                                        placeholder="인증번호 6자리"
+                                    />
+                                    <span class="time">3:00</span>
+                                    <button type="button" disabled>
+                                        인증하기
+                                    </button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="js/common.js"></script>
+        <script src="js/find.js"></script>
+    </body>
+</html>

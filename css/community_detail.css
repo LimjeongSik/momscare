@@ -1,0 +1,367 @@
+.__wrap {
+    padding-top: 2.2rem;
+}
+.header {
+    padding-bottom: 0;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 2.3rem);
+}
+.main .container.full {
+    flex: 1;
+    padding-bottom: 3rem;
+}
+.community_head {
+    padding: 1rem 1.2rem 0;
+    margin-bottom: 0.7rem;
+}
+.community_user_profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--gray06);
+}
+.community_user_profile > div {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    grid-gap: 0.45rem;
+}
+.community_user_profile > div img {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.community_user_profile > div > div {
+    display: flex;
+    flex-direction: column;
+}
+.community_user_profile > div > div span {
+    font-size: 0.7rem;
+    color: var(--gray01);
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.021rem;
+}
+.community_user_profile > span {
+    font-size: 0.7rem;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.021rem;
+}
+.community_title {
+    margin-bottom: 0.7rem;
+}
+.images_swiper {
+    padding-left: 0.875rem;
+}
+.images_swiper .imagesSwiper {
+    padding: 0.75rem 0.75rem 0.75rem 0.325rem;
+}
+.images_swiper .imagesSwiper .swiper-slide {
+    position: relative;
+    width: 10.85rem;
+    height: 9.2rem;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    margin-right: 0.75rem;
+}
+.images_swiper .imagesSwiper .swiper-slide img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.community_text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+    margin-top: 0.4rem;
+    padding: 0 1.2rem;
+}
+.community_text > span {
+    font-size: 0.7rem;
+    color: var(--black01);
+    font-weight: 300;
+    line-height: 1.57;
+    letter-spacing: -0.021rem;
+}
+.community_text .hashtag {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+}
+.community_text .hashtag span {
+    font-size: 0.6rem;
+    color: var(--primary);
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: -0.012rem;
+}
+
+.community_comment_head > div {
+    height: 2rem;
+}
+.community_comment_more {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-top: 1px solid var(--gray06);
+    border-bottom: 1px solid var(--gray06);
+}
+.community_comment_more > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    grid-gap: 0.5rem;
+    cursor: pointer;
+}
+.community_comment_more > div span {
+    font-size: 0.8rem;
+    color: var(--black);
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.016rem;
+}
+.community_comment_more > div img {
+    display: block;
+    width: 0.35rem;
+    height: 1.2rem;
+}
+.community_comment_write {
+    display: flex;
+    align-items: center;
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid var(--gray06);
+}
+.community_comment_write input {
+    width: 100%;
+    font-size: 0.7rem;
+    color: var(--black01);
+    font-weight: 400;
+    line-height: 1.57;
+    letter-spacing: -0.014rem;
+    border: none;
+    outline: none;
+}
+.community_comment_write input::placeholder {
+    color: var(--gray);
+    font-weight: 200;
+}
+.community_comment_write button {
+    min-width: 2.25rem;
+    height: 1.5rem;
+    background: var(--gray06);
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 0.7rem;
+    color: var(--gray);
+    font-weight: 400;
+    line-height: 1.57;
+    letter-spacing: -0.014rem;
+}
+.community_comment_options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    grid-gap: 1rem;
+}
+.community_comment_options > div {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    grid-gap: 0.2rem;
+}
+.community_comment_options > div img {
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.community_comment_options > div span {
+    font-size: 0.6rem;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: -0.012rem;
+}
+
+/* comment */
+.community_comment_list {
+    height: fit-content !important;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--gray06);
+}
+.community_comment_list > ul li {
+    padding: 0.9rem 1.2rem;
+}
+.community_comment_list > ul li:not(:last-child) {
+    border-bottom: 1px solid var(--gray07);
+}
+.community_comment_list .list_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.community_comment_list .list_head .profile,
+.community_comment_list .list_head .sub {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+}
+.community_comment_list .list_head .profile img {
+    display: block;
+    width: 1.1rem;
+    height: 1.1rem;
+}
+.community_comment_list .list_head .profile span {
+    font-size: 0.7rem;
+    color: var(--black);
+    font-weight: 700;
+    line-height: 1.57;
+    letter-spacing: -0.014rem;
+}
+.community_comment_list .list_head .sub {
+    gap: 0.2rem;
+    grid-gap: 0.2rem;
+}
+.community_comment_list .list_head .sub span {
+    font-size: 0.6rem;
+    color: var(--gray);
+    font-weight: 100;
+    line-height: 1.67;
+    letter-spacing: -0.012rem;
+}
+.community_comment_list .list_body {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+.community_comment_list .list_body .comment {
+    font-size: 0.7rem;
+    color: var(--black01);
+    line-height: 1.57;
+    font-weight: 300;
+    letter-spacing: -0.014rem;
+}
+.community_comment_list .list_body .comment_options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+.community_comment_list .list_body .comment_options button {
+    width: 2rem;
+    background: transparent;
+    border: 1px solid var(--gray05);
+    border-radius: 0.2rem;
+    padding: 0;
+    font-size: 0.7rem;
+    color: var(--gray);
+    font-weight: 400;
+    line-height: 1.57;
+    letter-spacing: -0.014rem;
+    cursor: pointer;
+}
+.community_comment_list .list_body .comment_options > div {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    grid-gap: 0.1rem;
+}
+.community_comment_list .list_body .comment_options > div img {
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    transform: translateY(-1px);
+}
+.community_comment_list .list_body .comment_options > div span {
+    font-size: 0.7rem;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.57;
+    letter-spacing: -0.021rem;
+}
+.community_comment_list .list_body .comment_options > div span.active {
+    color: var(--primary);
+}
+.community_comment_list > ul li .comment_to_comment {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    grid-gap: 0.25rem;
+    margin-left: 1.5rem;
+    margin-top: 0.9rem;
+}
+.community_comment_list > ul li .comment_to_comment li {
+    padding: 0.6rem 0.5rem;
+    background: var(--gray07);
+    border-radius: 0.4rem;
+}
+
+/* image modal */
+.enlargement_image_modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    transition: opacity 0.3s ease-in-out;
+}
+.enlargement_image_modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+.enlargement_image_modal .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 50;
+}
+.enlargement_image_modal .enlargement_swiper {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 100;
+}
+.enlargement_image_modal .enlargement_swiper .swiper-slide {
+    position: relative;
+    width: 19.5rem;
+    height: 15.9rem;
+    overflow: hidden;
+}
+.enlargement_image_modal .enlargement_swiper .swiper-slide img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+@media screen and (max-width: 499px) {
+    .enlargement_image_modal .enlargement_swiper .swiper-slide {
+        width: 100%;
+        padding-bottom: calc(318 / 375 * 100%);
+    }
+}

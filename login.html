@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/login.css" />
+        <title>MOM'S CARE</title>
+    </head>
+    <body>
+        <div class="__wrap">
+            <header class="header">
+                <div>
+                    <div class="head_gnb">
+                        <div class="logo">
+                            <a href="main.html">
+                                <img
+                                    src="images/icons/icon_logo.png"
+                                    alt="mom's care"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="container full">
+                    <div class="login">
+                        <h2>
+                            로그인하고 맘스케어의<br />
+                            다양한 서비스를 경험하세요.
+                        </h2>
+                        <form class="login_form">
+                            <fieldset>
+                                <div class="label_title">
+                                    <label for="email">이메일</label>
+                                    <span>이메일 주소를 확인해 주세요.</span>
+                                </div>
+                                <div class="input email">
+                                    <input
+                                        type="text"
+                                        placeholder="이메일을 입력하세요."
+                                        id="email"
+                                    />
+                                    <div class="sub_options">
+                                        <button
+                                            class="btn_delete"
+                                            type="button"
+                                        >
+                                            <span class="hide">지우기</span>
+                                            <img
+                                                src="images/icons/icon_gray_delete.png"
+                                                alt="지우기"
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="label_title">
+                                    <label for="password">비밀번호</label>
+                                    <span>비밀번호를 확인해 주세요.</span>
+                                </div>
+                                <div class="input password">
+                                    <input
+                                        type="password"
+                                        placeholder="비밀번호를 입력하세요."
+                                        id="password"
+                                    />
+                                    <div class="sub_options">
+                                        <button class="btn_eye" type="button">
+                                            <span class="hide"
+                                                >비밀번호 보기</span
+                                            >
+                                        </button>
+                                        <button
+                                            class="btn_delete"
+                                            type="button"
+                                        >
+                                            <span class="hide">지우기</span>
+                                            <img
+                                                src="images/icons/icon_gray_delete.png"
+                                                alt="지우기"
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="find">
+                                <a href="find.html">이메일 찾기</a>
+                                <a href="find.html">비밀번호 찾기</a>
+                            </div>
+                            <button class="btn_login" type="button" disabled>
+                                로그인
+                            </button>
+                        </form>
+                    </div>
+                </section>
+                <section class="container">
+                    <div class="sns_login">
+                        <div class="sns_title">
+                            <span>SNS 계정으로 간편 로그인</span>
+                        </div>
+                        <div class="sns">
+                            <button>
+                                <span class="hide">카카오 로그인</span>
+                                <img
+                                    src="images/icons/icon_kakao.png"
+                                    alt="카카오 로그인"
+                                />
+                            </button>
+                            <button>
+                                <span class="hide">네이버 로그인</span>
+                                <img
+                                    src="images/icons/icon_naver.png"
+                                    alt="네이버 로그인"
+                                />
+                            </button>
+                        </div>
+                        <a href="register.html">
+                            아직 계정이 없으신가요?
+                            <span>회원가입 하기</span>
+                        </a>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <div class="registered_member_popup">
+            <div class="modal">
+                <div>
+                    <h6>
+                        간편가입으로 가입한<br />
+                        이력이 있어요
+                    </h6>
+                    <span> 간편 로그인을 진행해주세요. </span>
+                </div>
+                <button>확인</button>
+            </div>
+        </div>
+
+        <script src="js/login.js"></script>
+        <script>
+            const btnLogin = document.querySelector(".btn_login")
+            btnLogin.addEventListener("click", () => {
+                location.href = "main.html"
+            })
+        </script>
+    </body>
+</html>

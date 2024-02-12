@@ -1,0 +1,124 @@
+.__wrap {
+    padding-top: 6.45rem;
+    padding-bottom: 3.3rem;
+}
+.main {
+    padding-bottom: 1.5rem;
+}
+.community {
+    margin-top: 1.2rem;
+}
+.community .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    grid-gap: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--gray06);
+    cursor: pointer;
+}
+.community .list .user_profile {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+}
+.community .list .user_profile img {
+    display: block;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 1.1rem;
+}
+.community .list .user_profile span {
+    font-size: 0.7rem;
+    color: var(--black);
+    font-weight: 700;
+    letter-spacing: -0.014rem;
+    line-height: 1.57;
+}
+.community .list .user_commu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    grid-gap: 0.5rem;
+}
+.community .list .user_commu div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+}
+.community .list .user_commu div h6 {
+    font-size: 0.8rem;
+    color: var(--black);
+    font-weight: 300;
+    letter-spacing: -0.016rem;
+    line-height: 1.5;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.community .list .user_commu div span {
+    font-size: 0.7rem;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.57;
+    letter-spacing: -0.021rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.community .list .user_commu > img {
+    display: block;
+    width: 3.8rem;
+    height: 3.8rem;
+}
+.community .list .community_options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.community .list .community_options > div {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+}
+.community .list .community_options > div .option {
+    background-size: 0.8rem 0.8rem;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    padding-left: 1rem;
+    font-size: 0.6rem;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: -0.012rem;
+    cursor: pointer;
+}
+.community .list .community_options > div .btn_heart {
+    background-image: url("../images/icons/icon_heart_off.png");
+}
+.community .list .community_options > div .btn_heart.active {
+    background-image: url("../images/icons/icon_heart_on.png");
+}
+.community .list .community_options > div .btn_comment {
+    background-image: url("../images/icons/icon_comment.png");
+}
+.community .list .community_options > div .btn_favorites {
+    background-image: url("../images/icons/icon_favorites_off.png");
+}
+.community .list .community_options > div .btn_favorites.active {
+    background-image: url("../images/icons/icon_favorites_on.png");
+}
+.community .list .community_options .date {
+    font-size: 0.65rem;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.69;
+    letter-spacing: -0.0195rem;
+}

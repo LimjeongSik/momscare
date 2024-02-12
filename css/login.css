@@ -1,0 +1,303 @@
+.header {
+    position: initial;
+    padding-bottom: 0;
+}
+.main {
+    width: 100%;
+    height: calc(100vh - 2.2rem);
+    display: flex;
+    flex-direction: column;
+}
+.main > .container {
+    height: 100%;
+}
+.main > .container.full {
+    flex: 1;
+}
+.login {
+    padding: 0 1.2rem;
+    margin-top: 1.8rem;
+}
+.login > h2 {
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: 300;
+    line-height: 1.42;
+    letter-spacing: -0.024rem;
+}
+.login_form {
+    margin-top: 1.8rem;
+}
+.login_form > fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    grid-gap: 0.2rem;
+}
+.login_form > fieldset + fieldset {
+    margin-top: 0.6rem;
+}
+.login_form > fieldset .label_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login_form > fieldset .label_title > span {
+    display: none;
+    font-size: 0.6rem;
+    color: var(--error);
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: -0.012rem;
+}
+.login_form > fieldset.error .label_title > span {
+    display: block;
+}
+.login_form > fieldset label {
+    font-size: 0.6rem;
+    color: var(--black);
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: -0.012rem;
+}
+.login_form > fieldset input {
+    width: 100%;
+    height: 2.6rem;
+    border: 1px solid var(--gray04);
+    border-radius: 0.4rem;
+    padding: 0 4.4rem 0 1rem;
+    font-size: 0.8rem;
+    color: var(--black);
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.016rem;
+    outline: none;
+}
+.login_form > fieldset.error input {
+    border: 1px solid var(--error);
+}
+.login_form > fieldset input::placeholder {
+    color: var(--gray);
+    font-weight: 300;
+}
+.login_form > fieldset > .input {
+    position: relative;
+}
+.login_form > fieldset > .input .sub_options {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    grid-gap: 0.2rem;
+}
+.login_form > fieldset > .input .sub_options button {
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.login_form > fieldset > .input .sub_options button img {
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.login_form > fieldset > .input .sub_options button.btn_eye {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/icons/icon_gray_eye_off.png");
+}
+.login_form > fieldset > .input .sub_options button.btn_eye.active {
+    background-image: url("../images/icons/icon_gray_eye_on.png");
+}
+.login_form > fieldset > .input .sub_options button.btn_delete {
+    display: none;
+}
+.login_form > fieldset > .input .sub_options button.btn_delete.active {
+    display: block;
+}
+.login_form .find {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0.6rem;
+    gap: 0.45rem;
+    grid-gap: 0.45rem;
+}
+.login_form .find a {
+    position: relative;
+    font-size: 0.6rem;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: -0.012rem;
+    text-decoration: none;
+}
+.login_form .find a:first-child::after {
+    content: "";
+    position: absolute;
+    right: -0.25rem;
+    top: 50%;
+    transform: translateY(-60%);
+    width: 1px;
+    height: 0.7rem;
+    background: var(--gray04);
+}
+.login_form .btn_login {
+    width: 100%;
+    height: 2.6rem;
+    border-radius: 0.4rem;
+    background: var(--black);
+    border: none;
+    font-size: 0.8rem;
+    color: var(--white);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.016rem;
+    margin-top: 1.25rem;
+}
+.login_form .btn_login:disabled {
+    background: var(--gray06);
+    color: var(--gray);
+}
+.sns_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4.5rem 1.2rem 1.6rem;
+}
+.sns_login > .sns_title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.sns_login > .sns_title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background: var(--gray04);
+}
+.sns_login > .sns_title span {
+    position: relative;
+    font-size: 0.6rem;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: -0.012rem;
+    background: var(--white);
+    padding: 0 0.7rem;
+    z-index: 100;
+}
+.sns_login .sns {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    grid-gap: 0.8rem;
+    margin: 1.45rem 0 1.75rem;
+}
+.sns_login .sns button {
+    background: none;
+    padding: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.sns_login .sns button img {
+    display: block;
+    width: 2.6rem;
+    height: 2.6rem;
+}
+.sns_login > a {
+    font-size: 0.6rem;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.67;
+    letter-spacing: -0.012rem;
+    text-decoration: none;
+}
+.sns_login > a span {
+    position: relative;
+    font-weight: 700;
+}
+.sns_login > a span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.1rem;
+    width: 100%;
+    height: 1px;
+    background: var(--gray);
+}
+
+.registered_member_popup {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    transition: opacity 0.3s ease-in-out;
+}
+.registered_member_popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+.registered_member_popup .modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    max-width: 25rem;
+    padding: 1.5rem 0.8rem 0.8rem;
+    border-radius: 0.4rem;
+    background: var(--white);
+}
+.registered_member_popup .modal > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+}
+.registered_member_popup .modal > div h6 {
+    font-size: 0.9rem;
+    color: var(--black);
+    font-weight: 400;
+    line-height: 1.44;
+    letter-spacing: -0.018rem;
+    text-align: center;
+}
+.registered_member_popup .modal > div span {
+    font-size: 0.7rem;
+    color: var(--black);
+    font-weight: 300;
+    line-height: 1.57;
+    letter-spacing: -0.014rem;
+}
+.registered_member_popup .modal > button {
+    width: 100%;
+    height: 2.6rem;
+    border-radius: 0.4rem;
+    background: var(--black);
+    border: none;
+    font-size: 0.8rem;
+    color: var(--white);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.016rem;
+    margin-top: 1.3rem;
+}

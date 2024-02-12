@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/register_form.css" />
+        <title>MOM'S CARE</title>
+    </head>
+    <body>
+        <div class="__wrap">
+            <header class="header">
+                <div>
+                    <div class="head_gnb">
+                        <div class="btn_back">
+                            <img
+                                src="images/btns/btn_back.png"
+                                alt="뒤로가기"
+                            />
+                        </div>
+                        <h3 class="head_title">이메일 회원가입</h3>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="container full">
+                    <form>
+                        <div class="register">
+                            <div>
+                                <div class="register_form">
+                                    <div class="tx">
+                                        <span>필수 정보</span>
+                                    </div>
+                                    <div class="form">
+                                        <div class="inner_box">
+                                            <span>서비스 이용 약관</span>
+                                            <div class="bx_pop chk">
+                                                <span
+                                                    >약관 및 동의사항을
+                                                    확인하세요.</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="inner_box">
+                                            <span>회원 유형 선택</span>
+                                            <div class="bx_pop select">
+                                                <span
+                                                    >회원 유형을
+                                                    선택하세요.</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="email_view">
+                                            <div class="inner_box">
+                                                <span>이메일</span>
+                                                <div class="bx_input">
+                                                    <input
+                                                        type="text"
+                                                        placeholder="이메일을 입력하세요."
+                                                    />
+                                                    <button disabled>
+                                                        인증하기
+                                                    </button>
+                                                    <div
+                                                        class="verification_completed"
+                                                    >
+                                                        <div>
+                                                            <span
+                                                                >인증완료</span
+                                                            >
+                                                            <img
+                                                                src="images/icons/icon_checked.png"
+                                                                alt="인증완료"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inner_box">
+                                                <span>휴대폰 번호</span>
+                                                <div class="bx_input">
+                                                    <input
+                                                        type="text"
+                                                        placeholder="‘-’제외 숫자만 입력"
+                                                    />
+                                                    <button disabled>
+                                                        인증번호 전송
+                                                    </button>
+                                                    <div
+                                                        class="verification_completed"
+                                                    >
+                                                        <div>
+                                                            <span
+                                                                >인증완료</span
+                                                            >
+                                                            <img
+                                                                src="images/icons/icon_checked.png"
+                                                                alt="인증완료"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="bx_input certification_number"
+                                                >
+                                                    <input
+                                                        type="text"
+                                                        placeholder="인증번호 6자리"
+                                                    />
+                                                    <button disabled>
+                                                        인증하기
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="inner_box">
+                                                <fieldset>
+                                                    <div class="label_title">
+                                                        <label for="password"
+                                                            >비밀번호</label
+                                                        >
+                                                        <span
+                                                            >영문, 숫자,
+                                                            특수문자 조합 8자리
+                                                            이상
+                                                            입력해주세요.</span
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="bx_input sub_option"
+                                                    >
+                                                        <input
+                                                            type="password"
+                                                            id="password"
+                                                            placeholder="영문, 숫자, 특수문자 조합 8자리 이상"
+                                                        />
+                                                        <div
+                                                            class="sub_options"
+                                                        >
+                                                            <button
+                                                                class="btn_eye"
+                                                                type="button"
+                                                            >
+                                                                <span
+                                                                    class="hide"
+                                                                    >비밀번호
+                                                                    보기</span
+                                                                >
+                                                            </button>
+                                                            <button
+                                                                class="btn_delete"
+                                                                type="button"
+                                                            >
+                                                                <span
+                                                                    class="hide"
+                                                                    >지우기</span
+                                                                >
+                                                                <img
+                                                                    src="images/icons/icon_gray_delete.png"
+                                                                    alt="지우기"
+                                                                />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="inner_box">
+                                                <fieldset>
+                                                    <div class="label_title">
+                                                        <label for="passwordchk"
+                                                            >비밀번호
+                                                            확인</label
+                                                        >
+                                                        <span
+                                                            >비밀번호가 일치하지
+                                                            않습니다.</span
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="bx_input sub_option"
+                                                    >
+                                                        <input
+                                                            type="password"
+                                                            placeholder="비밀번호 재입력"
+                                                            id="passwordchk"
+                                                        />
+                                                        <div
+                                                            class="sub_options"
+                                                        >
+                                                            <button
+                                                                class="btn_eye"
+                                                                type="button"
+                                                            >
+                                                                <span
+                                                                    class="hide"
+                                                                    >비밀번호
+                                                                    보기</span
+                                                                >
+                                                            </button>
+                                                            <button
+                                                                class="btn_delete"
+                                                                type="button"
+                                                            >
+                                                                <span
+                                                                    class="hide"
+                                                                    >지우기</span
+                                                                >
+                                                                <img
+                                                                    src="images/icons/icon_gray_delete.png"
+                                                                    alt="지우기"
+                                                                />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="inner_box">
+                                            <fieldset>
+                                                <div class="label_title">
+                                                    <label for="passwordchk"
+                                                        >닉네임</label
+                                                    >
+                                                    <div class="tt">
+                                                        <span class="available"
+                                                            >이미 사용중인
+                                                            닉네임입니다.</span
+                                                        >
+                                                        <span class="typing"
+                                                            ><span class="value"
+                                                                >0</span
+                                                            >/8</span
+                                                        >
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="bx_input sub_option"
+                                                >
+                                                    <input
+                                                        type="text"
+                                                        placeholder="닉네임을 입력하세요"
+                                                        maxlength="8"
+                                                        class="nickname"
+                                                        id="nickname"
+                                                    />
+                                                    <div class="sub_options">
+                                                        <button
+                                                            class="btn_delete"
+                                                            type="button"
+                                                        >
+                                                            <span class="hide"
+                                                                >지우기</span
+                                                            >
+                                                            <img
+                                                                src="images/icons/icon_gray_delete.png"
+                                                                alt="지우기"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="register_sub_form">
+                                    <div class="tx">
+                                        <span>추가 정보</span>
+                                    </div>
+                                    <div class="form">
+                                        <div class="inner_box">
+                                            <span>근무 기관</span>
+                                            <div class="bx_input">
+                                                <input
+                                                    type="text"
+                                                    placeholder="근무 기관명을 입력하세요."
+                                                />
+                                            </div>
+                                            <span class="sub_tx"
+                                                >근무 기관을 입력하시면 더욱
+                                                편리하게 서비스를 이용하실 수
+                                                있습니다.</span
+                                            >
+                                        </div>
+                                        <div class="inner_box">
+                                            <span>경력</span>
+                                            <div class="bx_input">
+                                                <input
+                                                    type="text"
+                                                    placeholder="경력을 입력하세요."
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button>가입하기</button>
+                        </div>
+                    </form>
+                </section>
+            </main>
+        </div>
+        <!-- 약관 동의 모달 -->
+        <div class="agree_popup modal_popup">
+            <div class="overlay"></div>
+            <div class="content">
+                <h6>
+                    <span>약관</span> 및 <span>동의사항</span>을 확인해주세요.
+                </h6>
+                <div class="agree_form">
+                    <div class="agree_head">
+                        <div class="chk_bx">
+                            <input type="checkbox" id="all" />
+                            <label for="all">
+                                <span>전체 동의하기</span>
+                            </label>
+                        </div>
+                        <a href="">
+                            <img
+                                src="images/btns/btn_lightgray_rightarrow.png"
+                                alt=""
+                            />
+                        </a>
+                    </div>
+                    <div class="agree_body">
+                        <div class="list">
+                            <div class="chk_bx">
+                                <input
+                                    type="checkbox"
+                                    id="age"
+                                    class="required"
+                                />
+                                <label for="age">
+                                    <span>[필수] 만 14세 이상</span>
+                                </label>
+                            </div>
+                            <a href="">
+                                <img
+                                    src="images/btns/btn_lightgray_rightarrow.png"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                        <div class="list">
+                            <div class="chk_bx">
+                                <input
+                                    type="checkbox"
+                                    id="service"
+                                    class="required"
+                                />
+                                <label for="service">
+                                    <span>[필수] 서비스 이용약관</span>
+                                </label>
+                            </div>
+                            <a href="">
+                                <img
+                                    src="images/btns/btn_lightgray_rightarrow.png"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                        <div class="list">
+                            <div class="chk_bx">
+                                <input
+                                    type="checkbox"
+                                    id="privacy"
+                                    class="required"
+                                />
+                                <label for="privacy">
+                                    <span>[필수] 개인정보 수집 및 이용</span>
+                                </label>
+                            </div>
+                            <a href="">
+                                <img
+                                    src="images/btns/btn_lightgray_rightarrow.png"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                        <div class="list">
+                            <div class="chk_bx">
+                                <input
+                                    type="checkbox"
+                                    id="marketing"
+                                    class="option"
+                                />
+                                <label for="marketing">
+                                    <span>[선택] 마케팅 정보 수신 동의</span>
+                                </label>
+                            </div>
+                            <a href="">
+                                <img
+                                    src="images/btns/btn_lightgray_rightarrow.png"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn_confirm" disabled>확인</button>
+            </div>
+        </div>
+        <!-- 회원 유형 선택 모달 -->
+        <div class="category_popup modal_popup">
+            <div class="overlay"></div>
+            <div class="content">
+                <h6><span>회원 유형</span>을 선택하세요</h6>
+                <div class="category_form">
+                    <div class="list">
+                        <input type="radio" id="practician" name="category" />
+                        <label for="practician"
+                            >아동복지시설 종사자 (보육원, 그룹홈 등)</label
+                        >
+                    </div>
+                    <div class="list">
+                        <input type="radio" id="normal" name="category" />
+                        <label for="normal">일반</label>
+                    </div>
+                </div>
+                <button class="btn_confirm" disabled>확인</button>
+            </div>
+        </div>
+
+        <script src="js/common.js"></script>
+        <script src="js/register.js"></script>
+    </body>
+</html>

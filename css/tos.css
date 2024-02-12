@@ -1,0 +1,41 @@
+.__wrap {
+    padding-top: 2.2rem;
+}
+.header {
+    padding-bottom: 0;
+}
+.tos {
+    padding: 1rem 0;
+}
+.tos li {
+    padding: 0.6rem 1.25rem;
+    border-bottom: 1px solid var(--gray06);
+    cursor: pointer;
+}
+.tos li > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tos li span {
+    font-size: 0.7rem;
+    color: var(--black);
+    font-weight: 300;
+    line-height: 1.57;
+    letter-spacing: -0.021rem;
+}
+.tos li img {
+    display: block;
+    width: 1.1rem;
+    height: 1.1rem;
+}
+.tos_detail {
+    padding: 1rem 1.2rem;
+}
+.tos_detail span {
+    font-size: 0.7rem;
+    color: var(--black);
+    font-weight: 300;
+    line-height: 1.57;
+    letter-spacing: -0.014rem;
+}

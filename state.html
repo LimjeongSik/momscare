@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/state.css" />
+        <title>MOM'S CARE</title>
+    </head>
+    <body>
+        <div class="__wrap">
+            <header class="header">
+                <div>
+                    <div class="head_gnb">
+                        <h3 class="head_title">이메일 찾기</h3>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <!-- 이메일 찾기 성공 -->
+                <section class="container full default">
+                    <div class="state">
+                        <div class="state_val">
+                            <h6>
+                                회원님의 정보와 일치하는<br />
+                                이메일 계정은<br />
+                                <span>momscare@gmail.com</span> 입니다.
+                            </h6>
+                            <a href="find.html">비밀번호 찾기</a>
+                        </div>
+                        <button>로그인</button>
+                    </div>
+                </section>
+                <!-- 이메일 인증 -->
+                <section class="container full">
+                    <div class="state">
+                        <div class="state_val">
+                            <h6>
+                                <span>momscare@gmail.com</span> 로<br />
+                                이메일 인증이 요청되었습니다.<br />
+                                인증 후 완료 버튼을 선택해주세요.
+                            </h6>
+                        </div>
+                        <button>인증완료</button>
+                    </div>
+                </section>
+                <!-- 비밀번호 찾기 성공 -->
+                <section class="container full">
+                    <div class="state">
+                        <div class="state_val">
+                            <h6>
+                                이메일 전송이 완료되었습니다.<br />
+                                <span>메일의 링크</span>를 통해 비밀번호를<br />
+                                재설정 해주세요.
+                            </h6>
+                        </div>
+                        <button>확인</button>
+                    </div>
+                </section>
+                <!-- 비밀번호 재설정 완료 -->
+                <section class="container full">
+                    <div class="state">
+                        <div class="state_val">
+                            <h6>
+                                비밀번호가 재설정되었습니다.<br />
+                                <span>로그인</span> 후 이용해주세요.
+                            </h6>
+                        </div>
+                        <button>확인</button>
+                    </div>
+                </section>
+                <!-- 회원이 없을 경우 -->
+                <section class="container full">
+                    <div class="state">
+                        <div class="state_val">
+                            <h6>
+                                일치하는 회원 정보가 없습니다.<br />
+                                <span>회원가입</span> 후 이용해주세요.
+                            </h6>
+                        </div>
+                        <button>회원가입</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

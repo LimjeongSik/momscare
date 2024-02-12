@@ -1,0 +1,86 @@
+.__wrap {
+    padding-top: 2.2rem;
+    padding-bottom: 3.3rem;
+}
+.header {
+    padding-bottom: 0;
+}
+
+.brand {
+    padding: 0.9rem 1.2rem 0;
+}
+.brand > .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand > .logo img {
+    display: block;
+    width: 8.2rem;
+    height: auto;
+}
+.branding {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    grid-gap: 3rem;
+    padding: 1.2rem 0 3.7rem;
+}
+.branding .thumbnail {
+    border-radius: 0.8rem;
+    box-shadow: 0px 0.2rem 1.3rem 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.branding .thumbnail img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 12rem;
+    object-fit: contain;
+}
+.branding .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    grid-gap: 0.8rem;
+    margin-top: 1.4rem;
+}
+.branding .content .chap {
+    width: fit-content;
+    padding: 0.05rem 0.6rem 0.25rem;
+    border-radius: 5rem;
+}
+.branding .content .chap.history {
+    background: #fe885a;
+}
+.branding .content .chap.solution {
+    background: #fdd468;
+}
+.branding .content .chap.together {
+    background: #79c492;
+}
+.branding .content .chap span {
+    font-size: 0.6rem;
+    color: var(--white);
+    line-height: 1;
+    font-weight: 700;
+}
+.branding .content > h3 {
+    font-size: 1.2rem;
+    color: var(--black);
+    letter-spacing: -0.024rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+.branding .content > span {
+    font-size: 0.65rem;
+    color: var(--gray01);
+    line-height: 1.69;
+    letter-spacing: -0.013rem;
+    font-weight: 200;
+}
+.branding .content > span > span {
+    color: var(--black01);
+    font-weight: 700;
+}

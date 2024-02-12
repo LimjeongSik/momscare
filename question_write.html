@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/swiper.bundle.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/question_write.css" />
+        <title>MOM'S CARE</title>
+    </head>
+    <body>
+        <div class="__wrap">
+            <header class="header">
+                <div>
+                    <div class="head_gnb">
+                        <div class="btn_back">
+                            <img
+                                src="images/btns/btn_back.png"
+                                alt="뒤로가기"
+                            />
+                        </div>
+                        <h3 class="head_title">질문글 작성</h3>
+                        <div class="head_btns">
+                            <button class="btn_temporary_storage">
+                                임시저장
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="container">
+                    <div class="write_wrapper">
+                        <div class="service_hd">
+                            <h6>찾아가는 맘스케어</h6>
+                            <div>
+                                <span>서비스 신청하기</span>
+                                <img
+                                    src="images/icons/icon_white_rightarrow.png"
+                                    alt="서비스 신청하기"
+                                />
+                            </div>
+                        </div>
+                        <div class="write">
+                            <div class="select_bx">
+                                <div class="btn_select_popup">
+                                    <span class="kid_value"
+                                        >아이의 성별과 연령을
+                                        선택해주세요.</span
+                                    >
+                                    <img
+                                        src="images/icons/icon_small_gray_rightarrow.png"
+                                        alt="아이의 성별과 연령을 선택해주세요."
+                                    />
+                                </div>
+                            </div>
+                            <div class="write_head">
+                                <div class="write_form">
+                                    <input
+                                        type="text"
+                                        placeholder="제목을 입력해주세요."
+                                    />
+                                    <textarea
+                                        placeholder="아동을 양육 하면서 생기는 다양한 궁금증을&#10;이곳에서 물어보세요.&#10;&#10;맘스케어의 아동 치로 전문가가&#10;직접 답변해 드립니다."
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <div class="write_body">
+                                <div class="keyword">
+                                    <button class="btn_keyword_form">
+                                        <img
+                                            src="images/btns/btn_plus.png"
+                                            alt="키워드를 입력하세요."
+                                        />
+                                        <span>키워드를 입력하세요</span>
+                                    </button>
+                                    <div class="keyword_swiper">
+                                        <div class="swiper keywordSwiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="keyword_item">
+                                                        <span># 버릇</span>
+                                                        <button>
+                                                            <span class="hide"
+                                                                >삭제하기</span
+                                                            ><img
+                                                                src="images/btns/btn_black_delete.png"
+                                                                alt="삭제"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="keyword_item">
+                                                        <span># 버릇</span>
+                                                        <button>
+                                                            <span class="hide"
+                                                                >삭제하기</span
+                                                            ><img
+                                                                src="images/btns/btn_black_delete.png"
+                                                                alt="삭제"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="keyword_item">
+                                                        <span># 버릇</span>
+                                                        <button>
+                                                            <span class="hide"
+                                                                >삭제하기</span
+                                                            ><img
+                                                                src="images/btns/btn_black_delete.png"
+                                                                alt="삭제"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="keyword_item">
+                                                        <span># 버릇</span>
+                                                        <button>
+                                                            <span class="hide"
+                                                                >삭제하기</span
+                                                            ><img
+                                                                src="images/btns/btn_black_delete.png"
+                                                                alt="삭제"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="keyword_item">
+                                                        <span># 버릇</span>
+                                                        <button>
+                                                            <span class="hide"
+                                                                >삭제하기</span
+                                                            ><img
+                                                                src="images/btns/btn_black_delete.png"
+                                                                alt="삭제"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="keyword_input">
+                                    <input
+                                        type="text"
+                                        placeholder="키워드를 입력해주세요. (#으로 구분)"
+                                    />
+                                    <button>등록</button>
+                                </div>
+                                <div class="image_upload">
+                                    <div class="image_upload_button">
+                                        <input
+                                            type="file"
+                                            id="image_file_upload"
+                                        />
+                                        <label for="image_file_upload">
+                                            <span class="hide"
+                                                >이미지 업로드</span
+                                            >
+                                            <img
+                                                src="images/icons/icon_camera.png"
+                                                alt="이미지 업로드"
+                                            />
+                                        </label>
+                                    </div>
+                                    <div class="upload">
+                                        <!-- <span class="no-upload">
+                                            아동을 특정할 수 있는 사진은 <br />
+                                            업로드할 수 없습니다.
+                                        </span> -->
+                                        <div class="upload_swiper">
+                                            <div class="swiper uploadSwiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div
+                                                            class="upload_item"
+                                                        >
+                                                            <img
+                                                                src="images/sample/rectangle02.png"
+                                                                alt="샘플이미지"
+                                                            />
+                                                            <button>
+                                                                <span
+                                                                    class="hide"
+                                                                    >삭제하기</span
+                                                                ><img
+                                                                    src="images/btns/btn_image_delete.png"
+                                                                    alt="삭제"
+                                                                />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div
+                                                            class="upload_item"
+                                                        >
+                                                            <img
+                                                                src="images/sample/rectangle02.png"
+                                                                alt="샘플이미지"
+                                                            />
+                                                            <button>
+                                                                <span
+                                                                    class="hide"
+                                                                    >삭제하기</span
+                                                                ><img
+                                                                    src="images/btns/btn_image_delete.png"
+                                                                    alt="삭제"
+                                                                />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div
+                                                            class="upload_item"
+                                                        >
+                                                            <img
+                                                                src="images/sample/rectangle02.png"
+                                                                alt="샘플이미지"
+                                                            />
+                                                            <button>
+                                                                <span
+                                                                    class="hide"
+                                                                    >삭제하기</span
+                                                                ><img
+                                                                    src="images/btns/btn_image_delete.png"
+                                                                    alt="삭제"
+                                                                />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div
+                                                            class="upload_item"
+                                                        >
+                                                            <img
+                                                                src="images/sample/rectangle02.png"
+                                                                alt="샘플이미지"
+                                                            />
+                                                            <button>
+                                                                <span
+                                                                    class="hide"
+                                                                    >삭제하기</span
+                                                                ><img
+                                                                    src="images/btns/btn_image_delete.png"
+                                                                    alt="삭제"
+                                                                />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div
+                                                            class="upload_item"
+                                                        >
+                                                            <img
+                                                                src="images/sample/rectangle02.png"
+                                                                alt="샘플이미지"
+                                                            />
+                                                            <button>
+                                                                <span
+                                                                    class="hide"
+                                                                    >삭제하기</span
+                                                                ><img
+                                                                    src="images/btns/btn_image_delete.png"
+                                                                    alt="삭제"
+                                                                />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div
+                                                            class="upload_item"
+                                                        >
+                                                            <img
+                                                                src="images/sample/rectangle02.png"
+                                                                alt="샘플이미지"
+                                                            />
+                                                            <button>
+                                                                <span
+                                                                    class="hide"
+                                                                    >삭제하기</span
+                                                                ><img
+                                                                    src="images/btns/btn_image_delete.png"
+                                                                    alt="삭제"
+                                                                />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div
+                                                            class="upload_item"
+                                                        >
+                                                            <img
+                                                                src="images/sample/rectangle02.png"
+                                                                alt="샘플이미지"
+                                                            />
+                                                            <button>
+                                                                <span
+                                                                    class="hide"
+                                                                    >삭제하기</span
+                                                                ><img
+                                                                    src="images/btns/btn_image_delete.png"
+                                                                    alt="삭제"
+                                                                />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div
+                                                            class="upload_item"
+                                                        >
+                                                            <img
+                                                                src="images/sample/rectangle02.png"
+                                                                alt="샘플이미지"
+                                                            />
+                                                            <button>
+                                                                <span
+                                                                    class="hide"
+                                                                    >삭제하기</span
+                                                                ><img
+                                                                    src="images/btns/btn_image_delete.png"
+                                                                    alt="삭제"
+                                                                />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nickname">
+                                    <input type="checkbox" id="disclosure" />
+                                    <label for="disclosure"
+                                        >닉네임 비공개</label
+                                    >
+                                </div>
+                            </div>
+                            <div class="write_btn">
+                                <button disabled>작성하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <!-- 성별 및 연력 선택 팝업 -->
+        <div class="select_popup">
+            <div class="content">
+                <h6>성별과 연령을 선택해주세요.</h6>
+                <div class="select_form">
+                    <div class="dropdown gender">
+                        <div>
+                            <span class="value">성별 선택</span>
+                            <img
+                                src="images/btns/btn_darkgray_downarrow.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="dropdown_item">
+                            <ul>
+                                <li>전체</li>
+                                <li>여아</li>
+                                <li>남아</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown age">
+                        <div>
+                            <span class="value">연령 선택</span>
+                            <img
+                                src="images/btns/btn_darkgray_downarrow.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="dropdown_item">
+                            <ul>
+                                <li>전체</li>
+                                <li>1세 이하</li>
+                                <li>1~3세</li>
+                                <li>3~6세</li>
+                                <li>6~9세</li>
+                                <li>9~12세</li>
+                                <li>12~15세</li>
+                                <li>15세 이상</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn_confirm" disabled>확인</button>
+            </div>
+        </div>
+        <!-- 임시저장 팝업 -->
+        <div class="temporary_storage_popup">
+            <div class="content">
+                <div class="title">
+                    <h6>
+                        지금 나가면<br />
+                        작성중인 글이 사라져요!
+                    </h6>
+                    <span> 임시저장 하시겠어요? </span>
+                </div>
+                <div class="buttons">
+                    <button>임시저장 하고 나가기</button>
+                    <div>
+                        <button>저장 안하고 나가기</button>
+                        <button>계속 작성하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 이어쓰기 팝업 -->
+        <div class="continue_writing_popup">
+            <div class="content">
+                <div class="title">
+                    <h6>작성중인 질문글이 있어요!</h6>
+                    <span>이어서 작성하시겠어요?</span>
+                </div>
+                <div class="buttons">
+                    <button>이어서 작성하기</button>
+                    <div>
+                        <button>새로 작성하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 작성완료 팝업 -->
+        <div class="complete_popup">
+            <div class="content">
+                <div class="title">
+                    <h6>글 작성이 완료되었어요!</h6>
+                    <span>작성한 게시글로 이동합니다</span>
+                </div>
+                <div class="buttons">
+                    <button>확인</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/swiper.bundle.min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/questionWrite.js"></script>
+    </body>
+</html>
