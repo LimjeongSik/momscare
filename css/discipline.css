@@ -1,0 +1,218 @@
+.__wrap {
+    padding-top: 2.2rem;
+}
+.header {
+    padding-bottom: 0;
+}
+
+.discipline_hd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fe6800;
+    padding: 3.05rem 0;
+}
+.discipline_hd img {
+    display: block;
+    width: 100%;
+    max-width: 9rem;
+    height: auto;
+}
+.discipline_hd h2 {
+    font-size: 3.25rem;
+    color: var(--white);
+    font-weight: 700;
+    margin: 1.2rem 0 0.8rem;
+}
+.discipline_hd span {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #f7dd46;
+}
+.discipline_thumbnail img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 17.95rem;
+    object-fit: cover;
+}
+.discipline_step {
+    padding: 3.25rem 1.95rem 3rem;
+    background: #fff8e4;
+}
+.discipline_step h3 {
+    font-size: 1.65rem;
+    color: #fe6700;
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.0125rem;
+}
+.discipline_step .img_bx {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 2.375rem 0 2.2rem;
+}
+.discipline_step .img_bx img {
+    display: block;
+    width: 15.5rem;
+    height: auto;
+}
+.discipline_step span {
+    font-size: 1.1rem;
+    color: #666357;
+    font-weight: 200;
+    line-height: 1.72;
+    letter-spacing: -0.1088rem;
+    word-break: keep-all;
+}
+.discipline_step_1 {
+    padding: 2.4rem 1.95rem 3.5rem;
+    background: #ffe783;
+}
+.discipline_step_1 h4 {
+    font-size: 2.125rem;
+    color: #fe6700;
+    font-weight: 700;
+    line-height: 1.21;
+}
+.discipline_step_1 .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.475rem;
+    grid-gap: 0.475rem;
+    margin-top: 1.2rem;
+    padding-top: 1.7rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.discipline_info {
+    padding: 2.25rem 1.95rem 3.25rem;
+}
+.discipline_step_1 .info h5,
+.discipline_info h5 {
+    font-size: 1.35rem;
+    color: #666357;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.05rem;
+}
+.discipline_step_1 .info span {
+    font-size: 1.1rem;
+    color: #666357;
+    font-weight: 200;
+    line-height: 1.72;
+    letter-spacing: -0.1rem;
+    word-break: keep-all;
+}
+.discipline_step_1 .info span span,
+.discipline_info .info span span {
+    font-weight: 400;
+}
+.discipline_info .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    grid-gap: 1.25rem;
+    margin-top: 0.475rem;
+}
+.discipline_info .info span {
+    font-size: 1.1rem;
+    color: #666357;
+    font-weight: 200;
+    line-height: 1.59;
+    letter-spacing: -0.1rem;
+    word-break: keep-all;
+}
+.discipline_info .info span span {
+    font-weight: 400;
+}
+.discipline_info .tx_b {
+    text-align: center;
+    margin-top: 2.1rem;
+}
+.discipline_info strong {
+    font-size: 1.75rem;
+    color: #fe6700;
+    font-weight: 700;
+    line-height: 1.46;
+}
+.footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+    background: #fd6702;
+    z-index: 10;
+}
+.footer img {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+    z-index: 100;
+}
+
+@media screen and (max-width: 500px) {
+    .discipline_hd h2 {
+        font-size: 2.25rem;
+    }
+    .discipline_hd span {
+        font-size: 1rem;
+    }
+    .discipline_step {
+        padding: 2rem 1.4rem 1.75rem;
+    }
+    .discipline_step h3 {
+        font-size: 1.4rem;
+    }
+    .discipline_step .img_bx img {
+        width: 12.5rem;
+    }
+    .discipline_step span {
+        font-size: 0.9rem;
+    }
+    .discipline_step_1 {
+        padding: 1.6rem 1.4rem 2.25rem;
+    }
+    .discipline_step_1 h4 {
+        font-size: 1.4rem;
+    }
+    .discipline_step_1 .info {
+        margin-top: 1.2rem;
+        padding-top: 1.3rem;
+    }
+    .discipline_step_1 .info h5 {
+        font-size: 1.1rem;
+    }
+    .discipline_step_1 .info span {
+        font-size: 0.9rem;
+    }
+    .discipline_info {
+        padding: 1.6rem 1.4rem 2.25rem;
+    }
+    .discipline_info h5 {
+        font-size: 1.1rem;
+    }
+    .discipline_info .info {
+        margin-top: 0.475rem;
+    }
+    .discipline_info .info span {
+        font-size: 0.9rem;
+    }
+    .discipline_info .tx_b {
+        margin-top: 1.4rem;
+    }
+    .discipline_info strong {
+        font-size: 1.4rem;
+    }
+}
